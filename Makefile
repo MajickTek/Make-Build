@@ -1,6 +1,6 @@
 PREFIX = /usr/local
-BUILDCMD = gcc
-BUILDPARAMS = -o build
+BUILDCMD = gcc #This is the build program.
+BUILDPARAMS = -o build #This is where the parameters to BUILDCMD go
 
 build:
 	$(BUILDCMD) main.c $(BUILDPARAMS) #Build output file.
