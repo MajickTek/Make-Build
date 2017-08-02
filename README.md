@@ -5,5 +5,5 @@ Taken directly from github.com/MajickTek/QWERTYSH with slight modifications.
 
 ## Usage:
 Modify the Makefile to fit your build workflow (instructions inside).
-Then use the command "make build", and "make install" in that order.
+Then simply use the command "make all", which runs "make build" and "make install".
 To remove the program, type "make uninstall", then "make clean".
