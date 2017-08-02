@@ -1,7 +1,9 @@
 PREFIX = /usr/local
+BUILDCMD = gcc
+BUILDPARAMS = -o build
 
 build:
-	gcc main.c -o build #Build output file. Replace the command if you use a different program to build your code (in any language)
+	$(BUILDCMD) main.c $(BUILDPARAMS) #Build output file.
 .PHONY: install
 install: build
 	sudo mkdir -p $(PREFIX)/bin
