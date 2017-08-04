@@ -1,13 +1,14 @@
 PREFIX = /usr/local #Location in your PATH, /usr/local should be fine on macOS/BSD/Linux
 BUILDCMD = gcc #This is the build program.
+SRCFILE = main.c #
 BUILDPARAMS = -o build #This is where the parameters to BUILDCMD go
 EXEBIN = myprogram #replace "myprogram" with your desired executable name
 
-//----------------------------------------------
-//The following should NOT need to be modified.|
-//It is incredibly complicated and hacked up.  |
-//Modify the variables above to use this file. |
-//----------------------------------------------
+#-----------------------------------------------#
+# The following should NOT need to be modified. |
+# It is incredibly complicated and hacked up.   |
+# Modify the variables above to use this file.  |
+#-----------------------------------------------#
 build:
 	$(BUILDCMD) main.c $(BUILDPARAMS) #Build output file.
 .PHONY: install
