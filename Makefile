@@ -1,4 +1,4 @@
-PREFIX = /usr/local
+PREFIX = /usr/local #Location in your PATH, /usr/local should be fine on macOS/BSD/Linux
 BUILDCMD = gcc #This is the build program.
 BUILDPARAMS = -o build #This is where the parameters to BUILDCMD go
 
